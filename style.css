@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  font: 500 15px "Montserrat", sans-serif;
+}
+
+main {
+  width: 100%;
+  margin-left: 45%;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main-info {
+  padding: 30px;
+}
+
+h1 {
+  font: 700 32px "Fraunces", sans-serif;
+  color: hsl(212, 21%, 14%);
+}
+
+img {
+  width: 50%;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.info,
+.money {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.info > span {
+  letter-spacing: 5px;
+}
+
+#amount {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#amount > span {
+  text-decoration: line-through;
+}
+
+.disamount {
+  color: hsl(158, 36%, 37%);
+}
+
+#button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+  background: hsl(158, 36%, 37%);
+  color: #fff;
+  border-radius: 12px;
+}
+
+#button > span {
+  font-weight: 700;
+}
+
+#button > img {
+  width: 25px;
+  height: 25px;
+}
+
+#button:hover{
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 70vw;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+  }
+}
